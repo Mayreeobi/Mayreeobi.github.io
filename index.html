@@ -603,6 +603,34 @@
         </div>
       </div>
 
+      <!-- ======= Contact Form (Formspree) ======= -->
+    <form action="https://formspree.io/f/abcdxyz" method="POST" class="php-email-form mt-4">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+      </div>
+      <div class="form-group mt-3">
+        <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+      </div>
+
+      <!-- Optional: hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New message from Portfolio!">
+      <input type="hidden" name="_next" value="https://your-portfolio.com/thank-you.html">
+
+      <div class="text-center">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+    <!-- End Contact Form -->
+      
     </div>
   </section><!-- End Contact Section -->
 
@@ -629,5 +657,6 @@
 </body>
 
 </html>
+
 
 

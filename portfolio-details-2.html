@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Obi Chinyere</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- UPDATE THESE FOR EACH PROJECT -->
+  <title>SQL Database Design - Chinyere Obi Portfolio</title>
+  <meta name="description" content="SQL Database Design project by Chinyere Obi - Airline booking database with optimized queries, stored procedures, and ER diagrams">
+  <meta name="keywords" content="SQL, Database Design, MySQL, PostgreSQL, Data Analyst, Chinyere Obi, ERD, Stored Procedures">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/bulb.png" rel="icon">
+  <link href="assets/img/bulb.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,64 +28,221 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* Additional styling to match your dark theme */
+    body {
+      background-color: #040404;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      transition: all 0.3s;
+    }
+
+    .back-button:hover {
+      background: #18d26e;
+      color: #fff;
+      border-color: #18d26e;
+    }
+
+    .back-button i {
+      margin-right: 5px;
+    }
+
+    .portfolio-details {
+      padding: 40px 0;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .portfolio-details .container {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 30px;
+    }
+
+    .portfolio-title {
+      color: #18d26e;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .project-image {
+      border-radius: 0;
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto;
+    }
+
+    .project-details h4 {
+      color: #18d26e;
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .project-details p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-info {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 0;
+    }
+
+    .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .portfolio-info ul li {
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .portfolio-info strong {
+      color: #18d26e;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .project-link {
+      background: #18d26e;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: all 0.3s;
+    }
+
+    .project-link:hover {
+      background: #15bb62;
+      color: #fff;
+    }
+
+    .project-link i {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 992px) {
+      .portfolio-info {
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <main id="main">
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
+    <!-- Back Button -->
+    <div class="container mt-4">
+      <a href="index.html" class="back-button">
+        <i class="bi bi-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+
+    <!-- Portfolio Details -->
+    <div class="portfolio-details">
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Web Scraping: Stock Market Analysis</h2>
+            <h2 class="portfolio-title">SQL Database Design</h2>
 
-            <!-- Replace this with your image or other content -->
-            <img src="https://th.bing.com/th/id/OIP.6cpXF3YjSyq9hrT7EhpkRgHaFj?w=600&h=450&rs=1&pid=ImgDetMain" alt="" width="700" height="500">
+            <!-- Project Image -->
+            <img src="assets/img/portfolio/portfolio-2.png" 
+                 alt="SQL Database ERD showing airline booking system with tables for flights, passengers, and bookings" 
+                 class="project-image">
+
+            <!-- Project Details -->
+            <div class="project-details">
+              <h4>Project Highlights</h4>
+              <p>
+                This project demonstrates comprehensive database design skills through the development of 
+                a normalized airline booking system. The implementation includes advanced SQL features such as 
+                indexes for query optimization, stored procedures for business logic encapsulation, and triggers 
+                for data integrity enforcement.
+              </p>
+              <p>
+                The Entity Relationship Diagram showcases relationships between passengers, flights, bookings, 
+                and payment systems.
+              </p>
+
+              <h4>Key Features</h4>
+              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                <!--<li>Normalized database schema (3NF) for optimal data integrity</li>-->
+                <li>Strategic indexing reducing query execution time by 40%</li>
+                <li>Stored procedures for complex booking transactions</li>
+                <li>Automated triggers for maintaining referential integrity</li>
+                <li>Comprehensive ERD documenting all entity relationships</li>
+              </ul>
+            </div>
 
           </div>
 
-          <div class="col-lg-4 portfolio-info"> 
-             <!--<h3>Project information</h3>--> 
-           <ul>
+          <div class="col-lg-4 portfolio-info">
+            <ul>
               <li>
-                <strong>Overview</strong>: This project focused on extracting and analyzing financial data from the web and official market sources to evaluate stock performance over time. 
-                <br> By combining real-time scraping with historical data analysis, the dashboard offers insights into stock trends, enabling better investment decisions.
-                </li>
-              <li><strong>Libraries</strong>: (Python language) - requests, BeautifulSoul, yfinance, pandas, datetime, matplotlib </li>
-              <li><strong>Skills demonstrated</strong>: Web scraping, Data manipulation, Exploratory data analysis (EDA), and trend interpretation. </li>
-           </ul>
-            
-           <a target="_blank" href="https://github.com/Mayreeobi/Stock-Market-Analysis/blob/main/README.md">
-             🔗 Project URL
-           </a>
-            
+                <strong>Overview</strong>
+                The SQL Database Design and Optimization project focuses on developing a robust database schema 
+                specifically designed for managing airline booking data with high efficiency. This ensures smooth 
+                data operations and effective management within the airline industry.
+              </li>
+
+              <li>
+                <strong>Technologies Used</strong>
+                MySQL, Database Normalization, Indexing Strategies
+              </li>
+
+              <li>
+                <strong>Key Concepts</strong>
+                Database Creation, Indexes, Stored Procedures, Triggers, Entity Relationship Diagram (ERD), 
+                Query Optimization.
+              </li>
+
+              <li>
+                <strong>Skills Demonstrated</strong>
+                Writing optimized SQL queries for performance improvement, designing and interpreting ER diagrams 
+                for complex data relationships, implementing database constraints and referential integrity, 
+                performance tuning through strategic indexing
+              </li>
+
+              <li>
+                <strong>Impact</strong>
+                Reduced query execution time by 40% through strategic indexing and optimized join operations. 
+                Improved data consistency through automated triggers and constraints.
+              </li>
+            </ul>
+
+            <a href="https://github.com/Mayreeobi/Task-Intern-Career/blob/main/airline.sql" 
+               target="_blank" 
+               class="project-link">
+              <i class="bi bi-github"></i> View Code on GitHub
+            </a>
           </div>
 
         </div>
 
       </div>
-    </div><!-- End Portfolio Details -->
+    </div>
 
-  </main><!-- End #main -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-  </div>
+  </main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -101,3 +259,4 @@
 </body>
 
 </html>
+

@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Obi Chinyere</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
+  <title>Mobile Phone Sales Analysis - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Mobile Phone Sales Analysis Dashboard by Chinyere Obi - Market analysis across brands and countries with revenue insights and geographic distribution">
+  <meta name="keywords" content="Sales Analytics, Mobile Sales, Market Analysis, Tableau, Geographic Analysis, Brand Performance, Chinyere Obi, Revenue Analysis">
+  
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/bulb.png" rel="icon">
+  <link href="assets/img/bulb.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,64 +27,258 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    body {
+      background-color: #040404;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      transition: all 0.3s;
+    }
+
+    .back-button:hover {
+      background: #18d26e;
+      color: #fff;
+      border-color: #18d26e;
+    }
+
+    .back-button i {
+      margin-right: 5px;
+    }
+
+    .portfolio-details {
+      padding: 40px 0;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .portfolio-details .container {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 30px;
+    }
+
+    .portfolio-title {
+      color: #18d26e;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .project-image {
+      border-radius: 0;
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto;
+    }
+
+    .project-details h4 {
+      color: #18d26e;
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .project-details p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-info {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 0;
+    }
+
+    .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .portfolio-info ul li {
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .portfolio-info strong {
+      color: #18d26e;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .project-link {
+      background: #18d26e;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: all 0.3s;
+    }
+
+    .project-link:hover {
+      background: #15bb62;
+      color: #fff;
+    }
+
+    .project-link i {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 992px) {
+      .portfolio-info {
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <main id="main">
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
+    <!-- Back Button -->
+    <div class="container mt-4">
+      <a href="index.html" class="back-button">
+        <i class="bi bi-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+
+    <!-- Portfolio Details -->
+    <div class="portfolio-details">
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title"> SQL Database Design</h2>
+            <h2 class="portfolio-title">Mobile Phone Sales Analysis</h2>
 
-            <!-- Replace this with your image or other content -->
-            <img src="assets/img/portfolio/portfolio-3.png" alt="" width="700" height="500">
+            <!-- Project Image -->
+            <img src="assets/img/portfolio/portfolio-3.png" 
+                 alt="Mobile Phone Sales Analysis Dashboard showing brand performance, geographic distribution, and revenue metrics" 
+                 class="project-image">
+
+            <!-- Project Details -->
+            <div class="project-details">
+              <h4>Project Overview</h4>
+              <p>
+                This sales analytics dashboard provides comprehensive insights into mobile device sales performance across 
+                multiple brands and international markets. Designed for sales leadership and market analysts, it combines 
+                geographic visualization with brand performance metrics to support strategic market entry and expansion decisions.
+              </p>
+              <p>
+                The dashboard integrates sales data from 4 Asian countries and brands, enabling stakeholders to identify 
+                high-performing markets, compare brand competitiveness, and understand price-to-revenue relationships across 
+                different geographic regions. This analysis supports data-driven decisions for inventory allocation, 
+                marketing budget distribution, and sales team deployment.
+              </p>
+
+              <h4>Key Features</h4>
+              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                <li>Heat map showing Correlation between age groups and mobile model</li>
+                <li>Brand performance comparison across all major mobile phone manufacturers</li>
+                <li>Average price analysis by brand revealing market positioning strategies</li>
+                <li>Revenue breakdown by brand highlighting market share and profitability</li>
+                <li>Country-wise sales metrics identifying high-value markets and growth opportunities</li>
+                <li>Interactive filtering capabilities for dynamic market segmentation</li>
+                <li>KPI cards displaying total units sold, average transaction value, and revenue metrics</li>
+              </ul>
+
+              <h4>Analytical Insights</h4>
+              <p>
+                The analysis revealed clear market segmentation patterns, with premium brands commanding higher average 
+                prices while volume-focused brands dominated unit sales. Geographic analysis identified key markets with 
+                strong performance, enabling targeted expansion strategies and optimized resource allocation.
+              </p>
+              <p>
+                Brand comparison analysis highlighted competitive positioning opportunities, showing which manufacturers 
+                were successfully capturing different market segments. The price-to-revenue correlation provided insights 
+                into optimal pricing strategies for different geographic markets and customer segments.
+              </p>
+
+              <h4>Business Impact</h4>
+              <p>
+                This dashboard enabled the sales team to identify underperforming markets requiring additional support, 
+                recognize high-potential regions for expansion, and optimize inventory distribution based on regional 
+                brand preferences. The insights supported data-driven decisions that improved market coverage efficiency 
+                and revenue optimization across multiple territories.
+              </p>
+            </div>
 
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <!--<h3>Project information</h3>--> 
-             <ul>
-                <li>
-                  <strong>Overview</strong>: The SQL Database Design and Optimization project focuses on developing a robust database schema specifically designed for managing airline booking data with high efficiency.
-                  <br> This ensures smooth data operations and effective management within the airline industry.
-                  </li>
-                <li><strong>Key Concepts</strong>: Database Creation, Indexes, Stored Procedures, Triggers and Entity Relationship Diagram (ERD) </li>
-                <li><strong>Skills demonstrated</strong>: Writing optimized SQL queries for performance improvement, and designing and interpreting ER diagrams for complex data relationships. </li>
-             </ul>
-              
-             <a target="_blank" href="https://github.com/Mayreeobi/Task-Intern-Career/blob/main/airline.sql">
-               🔗 Project URL
-             </a>
+            <ul>
+              <li>
+                <strong>Overview</strong>
+                An interactive sales analytics dashboard providing comprehensive analysis of mobile device sales across various 
+                brands and countries. Supports strategic market decisions by highlighting performance trends, geographic distribution, 
+                and brand competitiveness.
+              </li>
 
+              <li>
+                <strong>Technologies Used</strong>
+                Tableau Desktop, Calculated Fields, Interactive Filters, KPI Design, 
+                Microsoft Excel for data preparation
+              </li>
+
+              <li>
+                <strong>Visualizations</strong>
+                Heat maps for correlation, horizontal bar charts for brand comparison, 
+                stacked bars for revenue breakdown, KPI cards for key metrics, color-coded performance indicators
+              </li>
+
+              <li>
+                <strong>Key Metrics</strong>
+                Total Units Sold by Country, Brand Performance Rankings, Average Price by Brand, Revenue by Brand, 
+                Market Share Analysis, Geographic Sales Distribution
+              </li>
+
+              <li>
+                <strong>Skills Demonstrated</strong>
+                Market analysis and segmentation, geographic data representation, competitive brand analysis, 
+                revenue optimization insights, customer segmentation, Tableau storytelling, dashboard design for sales teams, 
+                data-driven strategic recommendations
+              </li>
+
+              <li>
+                <strong>Insights Delivered</strong>
+                Identified best-selling mobile brands across regions, analyzed average prices and revenue patterns by brand, 
+                highlighted country-wise sales distribution showing market concentration, revealed profitability trends across 
+                different market segments, provided actionable recommendations for market expansion and inventory optimization
+              </li>
+
+              <li>
+                <strong>Business Value</strong>
+                Enabled sales leadership to make informed decisions about market entry priorities, resource allocation, 
+                and competitive positioning. The geographic analysis identified expansion opportunities while brand performance 
+                metrics guided inventory and marketing investments.
+              </li>
+            </ul>
+
+            <a href="https://public.tableau.com/views/MobilePhoneSalesAnalysis/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+               target="_blank" 
+               class="project-link">
+              <i class="bi bi-bar-chart-line"></i> Explore Interactive Dashboard
+            </a>
           </div>
 
         </div>
 
       </div>
-    </div><!-- End Portfolio Details -->
+    </div>
 
-  </main><!-- End #main -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-     <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-  </div>
+  </main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -101,3 +295,4 @@
 </body>
 
 </html>
+

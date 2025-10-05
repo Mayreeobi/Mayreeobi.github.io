@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Obi Chinyere</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
+  <title>Healthcare Analytics Dashboard - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Healthcare Analytics Dashboard by Chinyere Obi - Interactive Tableau visualization tracking patient summaries, diagnostic conditions, and treatment costs">
+  <meta name="keywords" content="Healthcare Analytics, Tableau, Data Visualization, Dashboard Design, KPI, Chinyere Obi, Healthcare Data">
+  
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/bulb.png" rel="icon">
+  <link href="assets/img/bulb.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,67 +27,233 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* Match your dark theme */
+    body {
+      background-color: #040404;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      transition: all 0.3s;
+    }
+
+    .back-button:hover {
+      background: #18d26e;
+      color: #fff;
+      border-color: #18d26e;
+    }
+
+    .back-button i {
+      margin-right: 5px;
+    }
+
+    .portfolio-details {
+      padding: 40px 0;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .portfolio-details .container {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 30px;
+    }
+
+    .portfolio-title {
+      color: #18d26e;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .project-image {
+      border-radius: 0;
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto;
+    }
+
+    .project-details h4 {
+      color: #18d26e;
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .project-details p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-info {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 0;
+    }
+
+    .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .portfolio-info ul li {
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .portfolio-info strong {
+      color: #18d26e;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .project-link {
+      background: #18d26e;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: all 0.3s;
+    }
+
+    .project-link:hover {
+      background: #15bb62;
+      color: #fff;
+    }
+
+    .project-link i {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 992px) {
+      .portfolio-info {
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <main id="main">
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
+    <!-- Back Button -->
+    <div class="container mt-4">
+      <a href="index.html" class="back-button">
+        <i class="bi bi-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+
+    <!-- Portfolio Details -->
+    <div class="portfolio-details">
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Healthcare Analytics</h2>
+            <h2 class="portfolio-title">Healthcare Analytics Dashboard</h2>
 
-            <!-- Replace this with your image or other content -->
-            <img src="assets/img/portfolio/portfolio-4.png" alt="" width="700" height="500">
+            <!-- Project Image -->
+            <img src="assets/img/portfolio/portfolio-4.png" 
+                 alt="Healthcare Analytics Dashboard showing patient summary, diagnostic conditions, and treatment cost visualizations" 
+                 class="project-image">
+
+            <!-- Project Details -->
+            <div class="project-details">
+              <h4>Project Highlights</h4>
+              <p>
+                This interactive healthcare dashboard provides stakeholders with comprehensive insights into patient care, 
+                diagnostic trends, and financial metrics. Built in Tableau, it transforms complex healthcare data into 
+                actionable visualizations that support data-driven decision-making for healthcare administrators and policymakers.
+              </p>
+              <p>
+                The dashboard integrates multiple data sources to present a holistic view of healthcare operations, 
+                enabling users to identify patterns in patient outcomes, monitor treatment effectiveness, and optimize 
+                cost management across different patient categories and conditions.
+              </p>
+
+              <h4>Key Features</h4>
+              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                <li>Three integrated views: Patient Summary, Diagnostic Conditions, and Treatment Cost Analysis</li>
+                <li>Trend lines tracking temporal patterns in patient admissions and outcomes</li>
+                <li>Pie charts visualizing patient gender distribution</li>
+                <li>Bar charts comparing treatment costs and effectiveness across conditions</li>
+                <li>Heat maps highlighting seasonal patterns in hospital admissions</li>
+                <li>Interactive filters enabling drill-down analysis by time period, patient type, and diagnosis</li>
+              </ul>
+
+              <h4>Impact</h4>
+              <p>
+                This dashboard empowers healthcare stakeholders to quickly identify trends, track outcomes, and monitor 
+                costs, leading to improved resource allocation and better patient care strategies.
+              </p>
+            </div>
 
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <!--<h3>Project Details</h3>--> 
-
             <ul>
               <li>
-                 <strong>Overview</strong>: This interactive dashboard offers a comprehensive view of healthcare data, focusing on three core areas: Patient Summary, Diagnostic Conditions, and Treatment Cost. 
-                 <br> 
-                 It helps stakeholders quickly identify trends, track healthcare outcomes, and monitor costs across patient categories. </li>
-              <li><strong>Visualizations</strong>: Utilizes diverse chart types including trend lines for temporal patterns, pie charts for patient distribution, bar charts for comparison of treatments, and a heatmap to highlight cost variations. </li>
-              <li><strong>Tool</strong>: Tableau & Excel </li>
-              <li><strong>Skills demonstrated</strong>: Data storytelling, healthcare analytics, dashboard design, KPI visualization, Tableau best practices.</li>
-              <!--<li><a target="_blank" href="https://github.com/Mayreeobi/Business-Analysis"><strong>View Project on GitHub</strong></a></li>-->
-            </ul>
-             
-            <a target="_blank" href="https://public.tableau.com/app/profile/chinyere.obi8867/viz/HealthcareAnalyticsDashboard_17447229298490/PatientSummary">
-              🔗 Explore the Interactive Dashboard
-            </a>
+                <strong>Overview</strong>
+                This interactive dashboard offers a comprehensive view of healthcare data, focusing on three core areas: 
+                Patient Summary, Diagnostic Conditions, and Treatment Cost. It helps stakeholders quickly identify trends, 
+                track healthcare outcomes, and monitor costs across patient categories.
+              </li>
 
+              <li>
+                <strong>Technologies Used</strong>
+                Tableau Desktop, Microsoft Excel, Data Modeling.
+              </li>
+
+              <li>
+                <strong>Visualizations</strong>
+                Trend lines for temporal patterns, pie charts for patient gender distribution, bar charts for treatment comparison, 
+                heat maps for admission seasonal patterns, and interactive filters for dynamic exploration
+              </li>
+
+              <li>
+                <strong>Key Concepts</strong>
+                Healthcare Analytics, Dashboard Design, KPI Visualization, Data Storytelling, Interactive Reporting, 
+                Healthcare Metrics, Cost Analysis
+              </li>
+
+              <li>
+                <strong>Skills Demonstrated</strong>
+                Data storytelling, healthcare domain knowledge, dashboard design principles, KPI development and visualization, 
+                Tableau best practices, user experience design for analytics tools
+              </li>
+
+              <li>
+                <strong>Impact</strong>
+                Enabled healthcare administrators to reduce decision-making time by providing real-time access to critical 
+                metrics and trends across patient care operations
+              </li>
+            </ul>
+
+            <a href="https://public.tableau.com/views/HealthcareAnalyticsDashboard_17447229298490/PatientSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+               target="_blank" 
+               class="project-link">
+              <i class="bi bi-bar-chart-line"></i> View Live Dashboard
+            </a>
           </div>
 
         </div>
 
       </div>
-    </div><!-- End Portfolio Details -->
+    </div>
 
-  </main><!-- End #main -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-     <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-  </div>
+  </main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -104,3 +270,6 @@
 </body>
 
 </html>
+
+
+

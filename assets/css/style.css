@@ -9,13 +9,14 @@ body {
   background: transparent;
 }
 
+
 /* Remove global body background image */
 body::before {
   content: "";
   position: fixed;
   background: #040404  url("../img/chy11.png") no-repeat right center;
   background-size: contain;  /* shows whole image */
-  background-color: #868383; /* fill space around image #bebdc2*/
+  background-color: #1a1a1a; /* fill space around image #bebdc2 #7e7c7a #868383*/
   left: 0;
   right: 0;
   top: 0;
@@ -23,7 +24,9 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
+
+
+@media (min-width: 850px) {
   body::before {
     background-attachment: fixed;
   }
@@ -59,6 +62,7 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
+  padding-left: 50px; /* Added breathing room from left edge */
 }
 
 #header * {
@@ -72,6 +76,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 10px; /* Added spacing below name */
 }
 
 #header h1 a,
@@ -83,12 +88,12 @@ h6 {
 
 #header h2 {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 30px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 #header h2 span {
-  color: #fff;
+  color: #18d26e; /* #fff Changed from #fff to match your brand green */
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
 }
@@ -99,7 +104,7 @@ h6 {
 }
 
 #header .social-links {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
 }
 
@@ -196,7 +201,7 @@ h6 {
 */
 .navbar {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .navbar ul {
@@ -212,7 +217,7 @@ h6 {
 }
 
 .navbar li+li {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 .navbar a,
@@ -435,6 +440,7 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
+
 
 
 /*--------------------------------------------------------------

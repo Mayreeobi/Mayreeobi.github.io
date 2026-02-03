@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Python Data Cleaning & Google Sheets Automation - Chinyere Obi Portfolio</title>
-  <meta name="description" content="Python Data Cleaning & Google Sheets Automation by Chinyere Obi - Automated data pipeline reducing manual processing time by 80% using Python and Google Sheets API">
-  <meta name="keywords" content="Python Automation, Data Cleaning, Google Sheets API, ETL Pipeline, Data Processing, Chinyere Obi, Automation Script">
+  <title>Customer Churn Analysis & Prediction - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Customer Churn Analysis & Prediction by Chinyere Obi - Machine learning model predicting customer churn with 75% accuracy using Python and advanced analytics">
+  <meta name="keywords" content="Customer Churn, Machine Learning, Predictive Analytics, Python, Data Science, Chinyere Obi, Classification Model">
   
   <!-- Favicons -->
   <link href="assets/img/bulb.png" rel="icon">
@@ -28,7 +28,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Match your dark theme */
     body {
       background-color: #040404;
     }
@@ -136,6 +135,29 @@
       margin-right: 8px;
     }
 
+    .highlight-box {
+      background: rgba(24, 210, 110, 0.1);
+      border: 1px solid rgba(24, 210, 110, 0.3);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 10px;
+    }
+
+    .code-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid #18d26e;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      color: rgba(255, 255, 255, 0.9);
+      overflow-x: auto;
+      font-size: 13px;
+    }
+
     @media (max-width: 992px) {
       .portfolio-info {
         margin-top: 30px;
@@ -162,38 +184,56 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Python Data Cleaning & Google Sheets Automation</h2>
+            <h2 class="portfolio-title">Customer Churn Analysis & Prediction</h2>
 
             <!-- Project Image -->
             <img src="assets/img/portfolio/portfolio-2.png" 
-                 alt="Python automation script showing data cleaning pipeline and Google Sheets integration" 
+                 alt="Customer Churn Analysis showing predictive model results, feature importance, and retention insights" 
                  class="project-image">
 
             <!-- Project Details -->
             <div class="project-details">
-              <h4>Project Highlights</h4>
+              
+              <h4>The Challenge</h4>
               <p>
-                This automation project turns hours of repetitive data work into a process that runs in minutes. I built a Python pipeline that cleans messy data, standardizes formats, and automatically pushes clean results to Google Sheets where teams can access them. What used to take someone half a day now happens automatically while they focus on actual analysis.
-              </p>
-              <p>
-                The script handles all the tedious stuff: removing duplicates, fixing inconsistent formatting, validating data types, filling in missing values where it makes sense, and organizing everything into a clean structure. Then it uses the Google Sheets API to update the team's shared spreadsheets without anyone having to lift a finger.
+                Subscription businesses lose customers without warning, and by the time companies spot the pattern, thousands in revenue have already walked out the door. Acquiring a new customer costs 5-7x more than retaining an existing one, yet most companies only discover churn during quarterly reviews when it's too late to intervene.
               </p>
 
-              <h4>Key Features</h4>
-              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                <li>Automated data cleaning pipeline reducing manual processing time by 80%</li>
-                <li>Handles messy data: duplicates, missing values, inconsistent formats, and invalid entries</li>
-                <li>Direct integration with Google Sheets API for seamless data updates</li>
-                <li>Data validation rules ensuring quality before pushing to production sheets</li>
-                <li>Error handling and logging to track issues and maintain data integrity</li>
-                <li>Scheduled execution capability for regular, hands-free updates</li>
-                <li>Flexible configuration allowing easy adaptation to different data sources</li>
-              </ul>
-
-              <h4>Impact</h4>
+              <h4>What I Built</h4>
               <p>
-                This automation freed up the team to spend time on actual analysis instead of data prep. It also eliminated human error from the process, which means cleaner data and fewer "wait, these numbers don't look right" moments in meetings. Plus, everyone always has access to the latest cleaned data without having to ask someone to update the spreadsheet.
+                End-to-end machine learning pipeline predicting customer churn with 75% accuracy. Analyzed 7,000+ customer records to identify behavioral patterns signaling cancellation, then built an interactive Tableau dashboard providing real-time churn risk scoring for targeted retention efforts.
               </p>
+
+              <div class="highlight-box">
+                <p><strong style="color: #18d26e;">Business Impact:</strong></p>
+                <p>• 75% prediction accuracy identifying at-risk customers 30 days in advance</p>
+                <p>• 10,000+ customers scored by churn probability for prioritized outreach</p>
+                <p>• Potential $125K+ annual revenue recovery by saving just 50 high-value customers</p>
+                <p>• Feature importance analysis revealing systemic product and process issues</p>
+              </div>
+
+              <h4>Technical Approach</h4>
+
+              <div class="code-block">
+<strong style="color: #18d26e;">Feature Engineering Example:</strong><br><br>
+# Create tenure risk segments<br>
+df['tenure_group'] = pd.cut(df['tenure'], <br>
+&nbsp;&nbsp;&nbsp;&nbsp;bins=[0, 6, 12, 24, 999], <br>
+&nbsp;&nbsp;&nbsp;&nbsp;labels=['0-6mon', '6-12mon', '12-24mon', '24+mon'])<br><br>
+# Calculate average monthly spend<br>
+df['avg_monthly_spend'] = df['totalcharges'] / (df['tenure'] + 1)<br><br>
+# Price sensitivity indicator<br>
+df['price_sensitivity'] = df['monthlycharges'] / df['avg_monthly_spend']
+              </div>
+
+              <p>
+                Used Logistic Regression with an optimal balance of 75% accuracy and good interpretability. 
+              </p>
+
+              <p>
+                Built two-page Tableau dashboard: (1) Churn Analysis showing segment patterns, (2) Predictive Analysis with feature importance, risk segmentation, revenue at risk, confusion matrix, and top 10 highest-risk customers ready for immediate outreach.
+              </p>
+
             </div>
 
           </div>
@@ -202,34 +242,35 @@
             <ul>
               <li>
                 <strong>Overview</strong>
-                An automated data pipeline that cleans and standardizes messy data, then pushes it directly to Google Sheets. This script eliminates hours of manual data prep work, reduces errors, and keeps teams working with fresh, clean data automatically.
+                Machine learning pipeline achieving 75% accuracy on 7,000+ customer records. Identifies at-risk customers 30 days in advance with interactive dashboard showing churn probability scores, revenue at risk by segment, and prioritized intervention list.
               </li>
 
               <li>
                 <strong>Technologies Used</strong>
-                Python, Pandas, Google Sheets API, gspread, NumPy, regex, OAuth2, Jupyter Notebook, error logging libraries
-              </li>
-
-              <li>
-                <strong>Automation Components</strong>
-                Data extraction and loading, duplicate removal, format standardization, missing value handling, data type validation, API authentication, automated sheet updates, error handling and logging
+                Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), Machine Learning (Random Forest, XGBoost, Logistic Regression), Tableau (Interactive Dashboard), Jupyter Notebook, Statistical Analysis
               </li>
 
               <li>
                 <strong>Skills Demonstrated</strong>
-                Python scripting, API integration, data cleaning techniques, automation workflow design, error handling best practices, authentication and security, writing maintainable code
+                End-to-end ML pipeline development, feature engineering, model selection and validation, classification modeling, feature importance interpretation, business insight generation, Tableau dashboard design, ROI analysis, stakeholder communication
               </li>
 
               <li>
-                <strong>Impact</strong>
-                Reduced manual data processing time by 80%, eliminated human error in data preparation, and provided teams with real-time access to clean, standardized data for analysis and reporting
+                <strong>Business Impact</strong>
+                Provides 30-day advance warning vs. reactive quarterly reviews, enables prioritized retention outreach to high-risk customers, potential $125K+ annual revenue recovery, identified systemic issues (fiber quality, payment friction, onboarding gaps) affecting broader customer base
               </li>
             </ul>
 
-            <a href="https://github.com/Mayreeobi/Python-Data-Cleaning-Google-Sheets-Automation" 
+            <a href="https://github.com/Mayreeobi/End-to-End-Churn-Analysis" 
                target="_blank" 
                class="project-link">
-              <i class="bi bi-github"></i> View Project on GitHub
+              <i class="bi bi-github"></i> View Full Project on GitHub
+            </a>
+
+           <a href="https://public.tableau.com/views/ChurnAnalysis_17302938038440/PredictiveAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+               target="_blank" 
+               class="project-link">
+              <i class="bi bi-bar-chart-line"></i> View Live Dashboard
             </a>
           </div>
 
@@ -244,7 +285,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <link href="assets/vendor/isotope-layout/isotope.pkgd.min.js" rel="stylesheet">
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -254,5 +295,9 @@
 
 </body>
 
-
 </html>
+
+
+
+
+

@@ -28,7 +28,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Match your dark theme */
     body {
       background-color: #040404;
     }
@@ -136,6 +135,29 @@
       margin-right: 8px;
     }
 
+    .highlight-box {
+      background: rgba(24, 210, 110, 0.1);
+      border: 1px solid rgba(24, 210, 110, 0.3);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 10px;
+    }
+
+    .code-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid #18d26e;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      color: rgba(255, 255, 255, 0.9);
+      overflow-x: auto;
+      font-size: 13px;
+    }
+
     @media (max-width: 992px) {
       .portfolio-info {
         margin-top: 30px;
@@ -166,38 +188,53 @@
 
             <!-- Project Image -->
             <img src="assets/img/portfolio/portfolio-5.png" 
-                 alt="Healthcare Analytics Dashboard showing patient summary, diagnostic conditions, and treatment cost visualizations" 
+                 alt="Healthcare analytics Tableau dashboard showing patient summaries, diagnostic trends, and treatment cost analysis" 
                  class="project-image">
 
             <!-- Project Details -->
             <div class="project-details">
-              <h4>Project Highlights</h4>
+              
+              <h4>The Challenge</h4>
               <p>
-                This interactive healthcare dashboard provides stakeholders with comprehensive insights into patient care, 
-                diagnostic trends, and financial metrics. Built in Tableau, it transforms complex healthcare data into 
-                actionable visualizations that support data-driven decision-making for healthcare administrators and policymakers.
-              </p>
+                Healthcare administrators and policymakers required a unified, easy-to-interpret view of patient care,
+                diagnostic trends, and treatment costs. Data was fragmented across multiple sources, limiting visibility
+                into patient outcomes, treatment effectiveness, seasonal admission patterns, and cost drivers; slowing
+                down evidence-based decision-making.
+              </p>              
+
+              <h4>What I Built</h4>
               <p>
-                The dashboard integrates multiple data sources to present a holistic view of healthcare operations, 
-                enabling users to identify patterns in patient outcomes, monitor treatment effectiveness, and optimize 
-                cost management across different patient categories and conditions.
+              I designed and delivered an interactive Tableau dashboard that integrates multiple healthcare datasets
+              into a single, analytics-ready view to support operational and strategic decision-making.
               </p>
 
-              <h4>Key Features</h4>
               <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                <li>Three integrated views: Patient Summary, Diagnostic Conditions, and Treatment Cost Analysis</li>
-                <li>Trend lines tracking temporal patterns in patient admissions and outcomes</li>
-                <li>Pie charts visualizing patient gender distribution</li>
-                <li>Bar charts comparing treatment costs and effectiveness across conditions</li>
-                <li>Heat maps highlighting seasonal patterns in hospital admissions</li>
-                <li>Interactive filters enabling drill-down analysis by time period, patient type, and diagnosis</li>
+                <li>Prepared and modeled healthcare data in Microsoft Excel for analytics readiness</li>
+                <li>Designed KPI-driven visualizations including trend lines, bar charts, pie charts, and heat maps</li>
+                <li>Built interactive filters enabling drill-down by time period, patient type, and diagnosis</li>
+                <li>Applied Tableau best practices for clarity, usability, and data storytelling</li>
               </ul>
 
-              <h4>Impact</h4>
-              <p>
-                This dashboard empowers healthcare stakeholders to quickly identify trends, track outcomes, and monitor 
-                costs, leading to improved resource allocation and better patient care strategies.
               </p>
+
+              <div class="highlight-box">
+                <p><strong style="color: #18d26e;">Business Impact:</strong></p>
+                <p>• Enabled rapid identification of trends in patient admissions and outcomes</p>
+                <p>• Improved monitoring of treatment effectiveness and cost patterns across conditions</p>
+                <p>• Revealed seasonal admission trends using heat map analysis</p>
+                <p>• Reduced decision-making time through real-time access to critical healthcare KPIs</p>
+              </div>
+
+              <h4>Dashboard Structure</h4>
+              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                <p>
+                The solution consists of a three-page Tableau dashboard:
+                </p>
+                <li><strong>Patient Summary</strong> – admissions trends, outcomes, and gender distribution;</li>
+                <li><strong>Diagnostic Conditions</strong> – prevalence and patterns across medical conditions;</li>
+                <li><strong>Treatment Cost Analysis</strong> – comparative cost and effectiveness across diagnoses.</li>
+              </ul>
+
             </div>
 
           </div>
@@ -206,42 +243,27 @@
             <ul>
               <li>
                 <strong>Overview</strong>
-                This interactive dashboard offers a comprehensive view of healthcare data, focusing on three core areas: 
-                Patient Summary, Diagnostic Conditions, and Treatment Cost. It helps stakeholders quickly identify trends, 
-                track healthcare outcomes, and monitor costs across patient categories.
+                Interactive healthcare analytics dashboard providing real-time visibility into patient outcomes,
+                diagnostic trends, and treatment costs. Designed to support data-driven decisions for healthcare administrators and policymakers.
               </li>
 
               <li>
                 <strong>Technologies Used</strong>
-                Tableau Desktop, Microsoft Excel, Data Modeling.
-              </li>
-
-              <li>
-                <strong>Visualizations</strong>
-                Trend lines for temporal patterns, pie charts for patient gender distribution, bar charts for treatment comparison, 
-                heat maps for admission seasonal patterns, and interactive filters for dynamic exploration
-              </li>
-
-              <li>
-                <strong>Key Concepts</strong>
-                Healthcare Analytics, Dashboard Design, KPI Visualization, Data Storytelling, Interactive Reporting, 
-                Healthcare Metrics, Cost Analysis
+                 Tableau Desktop(Interactive Dashboard), Microsoft Excel, Data Modeling
               </li>
 
               <li>
                 <strong>Skills Demonstrated</strong>
-                Data storytelling, healthcare domain knowledge, dashboard design principles, KPI development and visualization, 
-                Tableau best practices, user experience design for analytics tools
+                Healthcare analytics, data storytelling, KPI development and visualization, dashboard design, Tableau best practices, interactive reporting, and analytics UX design.
               </li>
 
               <li>
-                <strong>Impact</strong>
-                Enabled healthcare administrators to reduce decision-making time by providing real-time access to critical 
-                metrics and trends across patient care operations
+                <strong>Business Impact</strong>
+                Enabled healthcare stakeholders to monitor patient care performance, identify cost drivers, and improve resource allocation through centralized, real-time analytics.
               </li>
             </ul>
 
-            <a href="https://public.tableau.com/views/HealthcareAnalyticsDashboard_17447229298490/PatientSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+           <a href="https://public.tableau.com/views/HealthcareAnalyticsDashboard_17447229298490/PatientSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
                target="_blank" 
                class="project-link">
               <i class="bi bi-bar-chart-line"></i> View Live Dashboard
@@ -259,7 +281,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <link href="assets/vendor/isotope-layout/isotope.pkgd.min.js" rel="stylesheet">
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -270,4 +292,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
 

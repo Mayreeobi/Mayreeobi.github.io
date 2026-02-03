@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- UPDATE THESE FOR EACH PROJECT -->
-  <title>SQL Database Design - Chinyere Obi Portfolio</title>
-  <meta name="description" content="SQL Database Design project by Chinyere Obi - Airline booking database with optimized queries, stored procedures, and ER diagrams">
-  <meta name="keywords" content="SQL, Database Design, MySQL, PostgreSQL, Data Analyst, Chinyere Obi, ERD, Stored Procedures">
-
+  <title>Python Data Cleaning & Google Sheets Automation - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Automated ETL pipeline reducing data preparation time by 75% using Python and Google Sheets API">
+  <meta name="keywords" content="Python Automation, ETL Pipeline, Google Sheets API, Data Cleaning, Chinyere Obi">
+  
   <!-- Favicons -->
   <link href="assets/img/bulb.png" rel="icon">
   <link href="assets/img/bulb.png" rel="apple-touch-icon">
@@ -29,7 +28,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Additional styling to match your dark theme */
     body {
       background-color: #040404;
     }
@@ -137,6 +135,29 @@
       margin-right: 8px;
     }
 
+    .highlight-box {
+      background: rgba(24, 210, 110, 0.1);
+      border: 1px solid rgba(24, 210, 110, 0.3);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 10px;
+    }
+
+    .code-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid #18d26e;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      color: rgba(255, 255, 255, 0.9);
+      overflow-x: auto;
+      font-size: 13px;
+    }
+
     @media (max-width: 992px) {
       .portfolio-info {
         margin-top: 30px;
@@ -163,36 +184,53 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">SQL Database Design</h2>
+            <h2 class="portfolio-title">Python Data Cleaning & Google Sheets Automation</h2>
 
             <!-- Project Image -->
             <img src="assets/img/portfolio/portfolio-3.png" 
-                 alt="SQL Database ERD showing airline booking system with tables for flights, passengers, and bookings" 
+                 alt="Python automation pipeline workflow showing data cleaning and Google Sheets integration" 
                  class="project-image">
 
             <!-- Project Details -->
             <div class="project-details">
-              <h4>Project Highlights</h4>
+              
+              <h4>The Challenge</h4>
               <p>
-                This project demonstrates comprehensive database design skills through the development of 
-                a normalized airline booking system. The implementation includes advanced SQL features such as 
-                indexes for query optimization, stored procedures for business logic encapsulation, and triggers 
-                for data integrity enforcement.
-              </p>
-              <p>
-                The Entity Relationship Diagram showcases relationships between passengers, flights, bookings, 
-                and payment systems, following third normal form (3NF) principles to eliminate data redundancy 
-                and ensure scalability.
+                Teams were spending 8+ hours weekly on repetitive data preparation (downloading CSVs, cleaning inconsistent formats, fixing data quality issues, running validation checks, and manually uploading to Google Sheets for stakeholder dashboards). This workflow was error-prone (15-20% manual entry error rate), delayed reporting by days, and prevented analysts from focusing on actual analysis.
               </p>
 
-              <h4>Key Features</h4>
-              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                <li>Normalized database schema (3NF) for optimal data integrity</li>
-                <li>Strategic indexing reducing query execution time by 40%</li>
-                <li>Stored procedures for complex booking transactions</li>
-                <li>Automated triggers for maintaining referential integrity</li>
-                <li>Comprehensive ERD documenting all entity relationships</li>
-              </ul>
+              <h4>What I Built</h4>
+              <p>
+                Designed and implemented an automated ETL pipeline in Python that standardizes, validates, and cleans raw datasets before pushing directly to Google Sheets via API integration.
+              </p>
+
+              <div class="highlight-box">
+                <p><strong style="color: #18d26e;">Business Impact:</strong></p>
+                <p>• 98% time reduction in data preparation (8 hours → 10 minutes weekly))</p>
+                <p>• 90% reduction in reporting errors (20% → 2% error rate)</p>
+                <p>• Real-time dashboard updates vs. weekly manual refreshes</p>
+              </div>
+
+              <h4>Technical Approach</h4>
+              <p>
+                The pipeline was designed as a configurable framework, enabling reuse across teams and datasets without rewriting core logic.
+              </p>
+
+                <div class="code-block">
+<div class="highlight-box">
+  <p><strong style="color: #18d26e;">Pipeline Architecture:</strong></p>
+  <p>• <strong>Extract & Validate:</strong> Schema enforcement, type coercion, duplicate detection on primary keys</p>
+  <p>• <strong>Transform & Clean:</strong> Date normalization, numeric parsing, categorical standardization, boolean normalization</p>
+  <p>• <strong>Load:</strong> Google Sheets API integration with retry logic and rate-limit handling</p>
+</div>
+
+              </div>
+
+              <p>
+                This solution is particularly suited for early-stage SaaS teams that rely on Google Sheets for reporting but lack dedicated data engineering resources
+                <!--Built modular Python pipeline with three core components: (1) Extract & Validate - reads from multiple sources (CSV, Excel, databases) with automated validation, (2) Transform & Clean - standardizes formats, handles missing values, applies business logic, (3) Load - pushes to Google Sheets via API with retry logic for rate limits.-->
+              </p>
+
             </div>
 
           </div>
@@ -201,40 +239,29 @@
             <ul>
               <li>
                 <strong>Overview</strong>
-                The SQL Database Design and Optimization project focuses on developing a robust database schema 
-                specifically designed for managing airline booking data with high efficiency. This ensures smooth 
-                data operations and effective management within the airline industry.
+                Automated ETL pipeline eliminating 8 hours of weekly manual data prep. Reduces reporting errors by 90% while enabling real-time stakeholder dashboard updates through Python and Google Sheets API integration.
               </li>
 
               <li>
                 <strong>Technologies Used</strong>
-                MySQL, SQL Server Management Studio, Database Normalization, Indexing Strategies
-              </li>
-
-              <li>
-                <strong>Key Concepts</strong>
-                Database Creation, Indexes, Stored Procedures, Triggers, Entity Relationship Diagram (ERD), 
-                Query Optimization, Normalization (1NF, 2NF, 3NF)
+                Python (Pandas, NumPy), Google Sheets API (gspread), OAuth2 Authentication, Error Logging, Automated Scheduling
               </li>
 
               <li>
                 <strong>Skills Demonstrated</strong>
-                Writing optimized SQL queries for performance improvement, designing and interpreting ER diagrams 
-                for complex data relationships, implementing database constraints and referential integrity, 
-                performance tuning through strategic indexing
+                Python automation, ETL pipeline development, API integration, data validation, error handling, modular code design, workflow optimization, configuration management, production deployment
               </li>
 
               <li>
-                <strong>Impact</strong>
-                Reduced query execution time by 40% through strategic indexing and optimized join operations. 
-                Improved data consistency through automated triggers and constraints.
+                <strong>Business Impact</strong>
+                98% time savings (8 hrs → 10 min weekly), 90% error reduction (20% → 2% error rate), enabled real-time updates vs. weekly manual refreshes, reusable framework saved 470+ hours annually across 3 departments
               </li>
             </ul>
 
-            <a href="https://github.com/Mayreeobi/Task-Intern-Career/blob/main/airline.sql" 
+            <a href="https://github.com/Mayreeobi" 
                target="_blank" 
                class="project-link">
-              <i class="bi bi-github"></i> View Code on GitHub
+              <i class="bi bi-github"></i> View Full Project on GitHub
             </a>
           </div>
 
@@ -261,55 +288,5 @@
 
 </html>
 
-<!-- 
-=============================================================================
-INSTRUCTIONS FOR OTHER PORTFOLIO DETAIL PAGES
-=============================================================================
 
-Save this as: portfolio-details-3.html
 
-For other projects, duplicate and update:
-
-1. META TAGS (in <head>):
-   - <title>
-   - meta description
-   - meta keywords
-
-2. CONTENT:
-   - .portfolio-title (h2)
-   - Image src and alt text
-   - Project Highlights section
-   - Key Features list
-   - All info in the sidebar (Overview, Technologies, etc.)
-   - GitHub link URL
-
-3. SAVE AS:
-   - portfolio-details-4.html (Healthcare Analytics)
-   - portfolio-details-5.html (Sales Performance)
-   - portfolio-details-6.html (Supply Chain)
-   - portfolio-details-7.html (Crime Analysis)
-
-PROJECT-SPECIFIC CONTENT SUGGESTIONS:
-
-Healthcare Analytics (portfolio-details-4.html):
-- Image: assets/img/portfolio/portfolio-4.png
-- Technologies: Power BI, DAX, Excel, Data Modeling
-- Key Concepts: KPI Development, Dashboard Design, Healthcare Metrics
-- GitHub/Tableau Link: Update to actual project URL
-
-Sales Performance (portfolio-details-5.html):
-- Image: assets/img/portfolio/portfolio-5.png
-- Technologies: Tableau, SQL, Advanced Excel
-- Key Concepts: Sales Analytics, Revenue Forecasting, Customer Segmentation
-
-Supply Chain (portfolio-details-6.html):
-- Image: assets/img/portfolio/portfolio-6.png
-- Technologies: Power BI, SQL, Python
-- Key Concepts: Inventory Optimization, Logistics Analysis, Supply Chain KPIs
-
-Crime Analysis (portfolio-details-7.html):
-- Image: assets/img/portfolio/portfolio-1.png
-- Technologies: Tableau, Python, Geospatial Analysis
-- Key Concepts: Crime Pattern Recognition, Temporal Analysis, Heat Maps
-=============================================================================
--->

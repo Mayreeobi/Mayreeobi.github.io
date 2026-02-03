@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Marketing Campaign Dashboard - Chinyere Obi Portfolio</title>
-  <meta name="description" content="Marketing Campaign Dashboard by Chinyere Obi - Interactive analytics dashboard tracking campaign performance, conversions, and ROI across multiple channels">
-  <meta name="keywords" content="Marketing Analytics, Campaign Dashboard, Data Visualization, Tableau, Marketing KPIs, Chinyere Obi, Conversion Rate, ROI Analysis">
+  <title>SQL Database Design - Airline Booking System - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Normalized database schema for airline booking system with optimized queries and data integrity constraints">
+  <meta name="keywords" content="SQL Database Design, Database Normalization, Airline System, Chinyere Obi">
   
   <!-- Favicons -->
   <link href="assets/img/bulb.png" rel="icon">
@@ -73,7 +73,7 @@
 
     .project-image {
       border-radius: 0;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       width: 100%;
       height: auto;
     }
@@ -135,12 +135,27 @@
       margin-right: 8px;
     }
 
-    .image-caption {
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 14px;
-      font-style: italic;
-      margin-bottom: 20px;
-      text-align: center;
+    .highlight-box {
+      background: rgba(24, 210, 110, 0.1);
+      border: 1px solid rgba(24, 210, 110, 0.3);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 10px;
+    }
+
+    .code-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid #18d26e;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      color: rgba(255, 255, 255, 0.9);
+      overflow-x: auto;
+      font-size: 13px;
     }
 
     @media (max-width: 992px) {
@@ -169,69 +184,58 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Marketing Campaign Dashboard</h2>
+            <h2 class="portfolio-title">SQL Database Design - Airline Booking System</h2>
 
-            <!-- Executive Summary View -->
+            <!-- Project Image -->
             <img src="assets/img/portfolio/portfolio-4.png" 
-                 alt="Marketing Campaign Dashboard Executive Summary showing 78 campaigns, 1M impressions, and key performance metrics" 
+                 alt="Database schema diagram showing normalized airline booking system structure" 
                  class="project-image">
-            <p class="image-caption">Executive Summary - High-level campaign performance metrics</p>
-
-            <!-- Campaign Details View -->
-            <!--<img src="assets/img/portfolio/marketing-dashboard-2.png" 
-                 alt="Marketing Campaign Dashboard detailed view with campaign breakdowns, correlation analysis, and performance metrics" 
-                 class="project-image">
-            <p class="image-caption">Campaign Details - Granular analysis and correlation insights</p>-->
 
             <!-- Project Details -->
             <div class="project-details">
-              <h4>Project Overview</h4>
+              
+              <h4>The Challenge</h4>
               <p>
-                This comprehensive marketing campaign dashboard provides executives and marketing teams with real-time insights 
-                into campaign performance across multiple channels. Built to track 78 campaigns generating over 1 million impressions 
-                and $392K in spend, the dashboard consolidates data from Email, Social Ads, and Direct Mail to provide a unified 
-                view of marketing effectiveness.
-              </p>
-              <p>
-                The two-page layout offers both executive-level summaries and detailed campaign analytics, enabling stakeholders 
-                to quickly assess performance while also drilling down into specific metrics like conversion rates by audience segment, 
-                CPA by creative variant, and geographical performance trends.
+                Airlines needed a robust database to replace flat Excel files that caused data redundancy, inconsistent records, and manual reconciliation nightmares.
               </p>
 
-              <h4>Dashboard Features</h4>
-              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                <li><strong>Executive Summary Page:</strong> Top-level KPIs with PM (Previous Month) comparisons and trend sparklines</li>
-                <li><strong>Multi-Channel Analysis:</strong> Performance breakdown across Direct Mail, Email, and Social Ads</li>
-                <li><strong>Audience Segmentation:</strong> Conversion rates by demographic segments (College Students, Suburban Families, etc.)</li>
-                <li><strong>Campaign Performance:</strong> Detailed metrics for Flash Sale, Summer Promo, Back to School, and more</li>
-                <li><strong>Geographic Insights:</strong> City-level performance with spend tracking across Dallas, NYC, Austin, LA, and Chicago</li>
-                <li><strong>Creative Testing:</strong> CPA analysis across A/B/C test variants and channels</li>
-                <li><strong>Device Analytics:</strong> Conversion rate comparison across Desktop, Mobile, and Mixed devices</li>
-                <li><strong>Correlation Analysis:</strong> Scatter plot showing relationship between Campaign ID, Impressions, and Spend</li>
-                <li><strong>Response Rate Tracking:</strong> Campaign-specific response rates with visual comparison</li>
-              </ul>
-
-              <h4>Key Metrics Tracked</h4>
-              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                <li>Total Campaigns: 78 (PM: 81)</li>
-                <li>Impressions: 1,040,451 (PM: 1,081,384)</li>
-                <li>Total Spend: $392,954 (PM: $487.89K)</li>
-                <li>Conversion Rate: 2.74% (PM: 2.34%)</li>
-                <li>Click-Through Rate: 4.83% (PM: 4.91%)</li>
-                <li>Mail Sent: 311,319 (PM: 255.91K, +21.18% vs PM)</li>
-              </ul>
-
-              <h4>Insights & Impact</h4>
+              <h4>What I Built</h4>
               <p>
-                The dashboard revealed that Email campaigns achieved the highest conversion volume (11.7K conversions at 3.36% rate), 
-                while Social Ads showed strong efficiency with 9.4K conversions. Audience segmentation analysis identified College Students 
-                as the highest-converting segment at 3.63%, providing clear targeting direction for future campaigns.
+                Designed a normalized (3NF) relational database with 6 core tables, 3 stored procedures, 2 triggers, and optimized indexes handling the complete booking workflow.
               </p>
-              <p>
-                Geographic analysis showed Dallas, TX leading with $103,130 in spend, while creative testing demonstrated that 
-                A/B Test variant A achieved the best CPA at $16.16-$18.10 across channels. The Response Rate analysis highlighted 
-                "Back to School" and "Flash Sale" as the top-performing campaign types.
-              </p>
+
+              <div class="highlight-box">
+                <p><strong style="color: #18d26e;">System Capabilities:</strong></p>
+                <p>• 6 normalized tables with enforced referential integrity via foreign keys</p>
+                <p>• 3 stored procedures automating payment updates and passenger management</p>
+                <p>• 2 triggers enforcing business rules (date validation, email format)</p>
+                <p>• 4 optimized indexes improving query performance on frequent lookups</p>
+              </div>
+
+              <h4>Technical Approach</h4>
+
+              <div class="code-block">
+<strong style="color: #18d26e;">Payments table with Constraints:</strong><br><br>
+CREATE TABLE payments (<br>
+&nbsp;&nbsp;&nbsp;&nbsp;payment_id VARCHAR(50) PRIMARY KEY,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booking_id INT UNSIGNED NOT NULL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;payment_date DATETIME NOT NULL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;amount DECIMAL(10,2) NOT NULL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;payment_status ENUM ('Success','Failed') NOT NULL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;payment_method ENUM ('Card','Transfer','Wallet') DEFAULT 'Card',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CONSTRAINT fk_payment_booking<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOREIGN KEY (booking_id)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REFERENCES bookings(booking_id)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ON DELETE CASCADE<br>
+);<br><br>
+<strong style="color: #18d26e;">Indexes created:</strong><br>
+CREATE INDEX idx_booking_passenger ON bookings(passenger_id);<br>
+CREATE INDEX idx_flight_route ON flights(departure_city, arrival_city);<br>
+CREATE INDEX idx_flight_departure ON flights(departure_datetime);<br>
+CREATE INDEX idx_payment_status ON payments(payment_status);<br>
+
+              </div>
+
             </div>
 
           </div>
@@ -240,60 +244,30 @@
             <ul>
               <li>
                 <strong>Overview</strong>
-                A dual-page marketing analytics dashboard providing comprehensive campaign performance tracking across multiple 
-                channels, audience segments, and geographic regions. Designed for executive reporting and detailed campaign optimization.
+                Normalized airline booking database with 5 core tables, 3 stored procedures, 2 triggers, and optimized indexes. Handles complete booking lifecycle from reservation through payment to ticket issuance with enforced data integrity.
               </li>
 
               <li>
                 <strong>Technologies Used</strong>
-                Tableau Desktop, Calculated Fields, Parameters, Dashboard Actions, Color-Coded KPIs
-              </li>
-
-              <li>
-                <strong>Dashboard Views</strong>
-                Executive Summary (high-level KPIs with trend indicators), Campaign Details (granular analysis with correlation insights), 
-                Interactive filters for date ranges and campaign selection
-              </li>
-
-              <li>
-                <strong>Key Metrics</strong>
-                Campaign Count, Impressions, Total Spend, Conversion Rate, CTR, Mail Sent, Channel Performance, Audience Conversion Rates, 
-                CPA by Variant, Geographic Spend, Device Type Analysis, Response Rates
+                SQL (MySQL), Database Normalization (3NF), Stored Procedures, Triggers, Indexing, ER Modeling
               </li>
 
               <li>
                 <strong>Skills Demonstrated</strong>
-                Multi-page dashboard design, KPI visualization with period-over-period comparisons, channel attribution analysis, 
-                audience segmentation analytics, geographic performance mapping, creative testing analysis, correlation analysis, 
-                data storytelling for marketing insights
+                Database schema design, SQL DDL and DML, normalization theory (1NF/2NF/3NF), stored procedure development, trigger implementation, index optimization, constraint design, referential integrity, ER modeling
               </li>
 
               <li>
-                <strong>Business Value</strong>
-                Enabled marketing leadership to identify top-performing channels (Email: 32.76% conversion rate), optimize budget 
-                allocation across 5 major cities, and improve campaign targeting based on audience segment performance. 
-                The dashboard consolidated data from multiple sources into a single source of truth for campaign performance.
-              </li>
-
-              <li>
-                <strong>Design Approach</strong>
-                Clean teal color scheme with red indicators for negative trends, responsive layout for executive briefings, 
-                strategic use of white space, intuitive navigation between summary and detail views
+                <strong>Business Impact</strong>
+                Eliminated data redundancy from flat file system, zero orphaned records through foreign key enforcement, automated common operations via stored procedures reducing manual SQL by 60%, enforced business rules at database level preventing invalid data entry
               </li>
             </ul>
 
-            <a href="https://github.com/Mayreeobi/Marketing-Campaign-Dashboard-" 
+            <a href="https://github.com/Mayreeobi/Airline-Booking-System-Database" 
                target="_blank" 
                class="project-link">
-              <i class="bi bi-github"></i> View on GitHub
+              <i class="bi bi-github"></i> View Full Project on GitHub
             </a>
-
-            <a href="https://public.tableau.com/app/profile/chinyere.obi8867/viz/MarketingCampaignDashboard_17563924732170/Summary" 
-               target="_blank" 
-               class="project-link">
-              <i class="bi bi-bar-chart-line"></i> View Live Dashboard
-            </a>
-            
           </div>
 
         </div>
@@ -318,16 +292,3 @@
 </body>
 
 </html>
-
-<!-- 
-SETUP INSTRUCTIONS:
-1. Save the two dashboard images as:
-   - assets/img/portfolio/marketing-dashboard-1.png (Executive Summary)
-   - assets/img/portfolio/marketing-dashboard-2.png (Campaign Details)
-
-2. Save this file as: portfolio-details-marketing.html (or appropriate number)
-
-3. Update your main portfolio index.html to link to this page
-
-4. If you have a live Tableau Public link, replace the GitHub link with it
--->

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Customer Churn Analysis & Prediction - Chinyere Obi Portfolio</title>
-  <meta name="description" content="Customer Churn Analysis & Prediction by Chinyere Obi - Machine learning model predicting customer churn with 85% accuracy using Python and advanced analytics">
-  <meta name="keywords" content="Customer Churn, Machine Learning, Predictive Analytics, Python, Data Science, Chinyere Obi, Classification Model">
+  <title>SaaS Revenue Reconciliation System - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Automated SaaS billing reconciliation system identifying $260K+ in annual revenue leakage">
+  <meta name="keywords" content="Revenue Analytics, SaaS Billing, Data Reconciliation, SQL, Python, Tableau, Chinyere Obi">
   
   <!-- Favicons -->
   <link href="assets/img/bulb.png" rel="icon">
@@ -28,7 +28,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Match your dark theme */
     body {
       background-color: #040404;
     }
@@ -136,6 +135,29 @@
       margin-right: 8px;
     }
 
+    .highlight-box {
+      background: rgba(24, 210, 110, 0.1);
+      border: 1px solid rgba(24, 210, 110, 0.3);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 10px;
+    }
+
+    .code-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid #18d26e;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      color: rgba(255, 255, 255, 0.9);
+      overflow-x: auto;
+      font-size: 13px;
+    }
+
     @media (max-width: 992px) {
       .portfolio-info {
         margin-top: 30px;
@@ -162,36 +184,55 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Customer Churn Analysis & Prediction</h2>
+            <h2 class="portfolio-title">SaaS User Access vs Billing Reconciliation System</h2>
 
             <!-- Project Image -->
-            <img src="assets/img/portfolio/portfolio-1.png" 
-                 alt="Customer Churn Analysis showing predictive model results, feature importance, and retention insights" 
+            <img src="assets/img/portfolio/portfolio-10.png" 
+                 alt="Revenue reconciliation dashboard showing billing discrepancies and revenue leakage analysis" 
                  class="project-image">
 
             <!-- Project Details -->
             <div class="project-details">
-              <h4>Project Highlights</h4>
+              
+              <h4>The Challenge</h4>
               <p>
-                This machine learning project tackles one of the biggest challenges in subscription businesses: identifying key churn drivers and predicting which customers are likely to leave. Using Python and advanced analytics, I built a classification model that helps companies spot at-risk customers before they churn, giving them a chance to take action and keep them around.
-              </p>
-              <p>
-                The model analyzes customer behavior patterns, and demographic data to predict churn with 75% accuracy. It also identifies which factors matter most when it comes to customer retention, helping businesses focus their efforts where they'll have the biggest impact.
+                SaaS companies lose 5-10% of monthly recurring revenue to billing errors—users with active system access who aren't being billed, or inactive users still being charged. Manual reconciliation is time-consuming (20-40 hours monthly), error-prone, and usually happens too late to recover lost revenue. Finance teams need automated systems to catch discrepancies before they compound.
               </p>
 
-              <h4>Key Features</h4>
-              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                <li>Predictive model achieving 75% accuracy in identifying customers likely to churn</li>
-                <li>Feature importance analysis revealing top drivers of customer attrition</li>
-                <li>Exploratory data analysis uncovering hidden patterns in customer behavior</li>
-                <li>Data preprocessing pipeline handling missing values and feature engineering</li>
-                <li>Actionable recommendations for retention strategies based on model insights</li>
-              </ul>
-
-              <h4>Impact</h4>
+              <h4>What I Built</h4>
               <p>
-                By identifying high-risk customers early, this model enables companies to proactively reach out with targeted retention campaigns, potentially saving thousands in customer acquisition costs. The feature importance analysis also helps teams understand what really matters to their customers, informing product development and customer success strategies.
+                Automated reconciliation system that cross-references user access logs against billing records to identify revenue leakage. Built end-to-end solution combining SQL database design and Python ETL pipelines analyzing 500 users across 7 issue categories.
               </p>
+
+              <div class="highlight-box">
+                <p><strong style="color: #18d26e;">Business Impact:</strong></p>
+                <p>• $260,388 in annual revenue at risk identified across 171 billing discrepancies</p>
+                <p>• $3,292/month in quick wins recoverable within one week</p>
+                <p>• Automated 20-40 hours of monthly manual reconciliation work</p>
+                <p>• System pays for itself recovering just 2% of identified leakage</p>
+              </div>
+
+              <h4>Technical Approach</h4>
+
+              <div class="code-block">
+<strong style="color: #18d26e;">SQL Logic - Identifying Free Riders:</strong><br><br>
+SELECT u.user_id, u.email, u.plan_type,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CASE u.plan_type<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHEN 'Starter' THEN 49<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHEN 'Pro' THEN 99<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHEN 'Enterprise' THEN 299<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END as expected_monthly_revenue<br>
+FROM user_accounts u<br>
+LEFT JOIN billing_subscriptions b ON u.user_id = b.user_id<br>
+WHERE u.account_status = 'active'<br>
+&nbsp;&nbsp;AND u.plan_type != 'Free'<br>
+&nbsp;&nbsp;AND b.subscription_id IS NULL;
+              </div>
+
+              <p>
+                Designed normalized SQL database with two core tables (user_accounts, billing_subscriptions) and 9 analytical views implementing reconciliation logic for each issue type. Python ETL pipeline automates data population and exports results. Tableau dashboard provides executive summary, issue breakdowns by type, user health matrix heatmap, and detailed investigation tables with recommended actions.
+              </p>
+
             </div>
 
           </div>
@@ -200,40 +241,29 @@
             <ul>
               <li>
                 <strong>Overview</strong>
-                A machine learning project that predicts customer churn with 75% accuracy. The model analyzes customer behavior, usage patterns, and demographics to identify at-risk customers, while also revealing which factors drive retention. This helps businesses take proactive steps to keep their customers happy and engaged.
+                Automated reconciliation system identifying $260K+ annual revenue leakage by matching user access against billing records. Categorizes 171 discrepancies across 7 issue types, quantifies financial impact, and provides prioritized action recommendations.
               </li>
 
               <li>
                 <strong>Technologies Used</strong>
-                Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook, NumPy, Tableau
+                SQL Server (Database Design & Queries), Python (Pandas, ETL Pipeline), Tableau (Interactive Dashboards), Excel (Data Validation)
               </li>
-
-              <li>
-                <strong>Analysis Components</strong>
-                Exploratory data analysis, feature engineering, model training and validation, feature importance analysis, performance metrics evaluation, and business insights generation
-              </li>
-
-              <!--<li>
-                <strong>Key Concepts</strong>
-                Classification Modeling, Predictive Analytics, Feature Engineering, Customer Retention, Machine Learning Pipeline, Model Evaluation, Data Preprocessing, Business Intelligence
-              </li>-->
 
               <li>
                 <strong>Skills Demonstrated</strong>
-                Machine learning implementation, statistical analysis, data cleaning and transformation, feature importance interpretation, translating technical findings into business recommendations, and dashboard building
+                Revenue leakage analysis, SQL database design, complex SQL queries (CTEs, joins, window functions), Python ETL automation, financial impact quantification, Tableau dashboard development, SaaS business operations, prioritization frameworks
+              </li>
+
+              <li>
+                <strong>Business Impact</strong>
+                Identified $260K+ annual revenue at risk, automated 20-40 hours monthly manual work, created prioritized action framework enabling finance teams to focus on high-impact fixes, system ROI positive after recovering just 2% of identified leakage
               </li>
             </ul>
 
-            <a href="https://github.com/Mayreeobi/End-to-End-Churn-Analysis" 
+            <a href="https://github.com/Mayreeobi/Revenue-Reconciliation-System" 
                target="_blank" 
                class="project-link">
-              <i class="bi bi-github"></i> View Project on GitHub
-            </a>
-
-           <a href="https://public.tableau.com/views/ChurnAnalysis_17302938038440/PredictiveAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
-               target="_blank" 
-               class="project-link">
-              <i class="bi bi-bar-chart-line"></i> View Live Dashboard
+              <i class="bi bi-github"></i> View Full Project on GitHub
             </a>
           </div>
 

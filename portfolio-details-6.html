@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mobile Phone Sales Analysis - Chinyere Obi Portfolio</title>
-  <meta name="description" content="Mobile Phone Sales Analysis Dashboard by Chinyere Obi - Market analysis across brands and countries with revenue insights and geographic distribution">
-  <meta name="keywords" content="Sales Analytics, Mobile Sales, Market Analysis, Tableau, Geographic Analysis, Brand Performance, Chinyere Obi, Revenue Analysis">
+  <title>Healthcare Analytics Dashboard - Chinyere Obi Portfolio</title>
+  <meta name="description" content="Healthcare Analytics Dashboard by Chinyere Obi - Interactive Tableau visualization tracking patient summaries, diagnostic conditions, and treatment costs">
+  <meta name="keywords" content="Healthcare Analytics, Tableau, Data Visualization, Dashboard Design, KPI, Chinyere Obi, Healthcare Data">
   
   <!-- Favicons -->
   <link href="assets/img/bulb.png" rel="icon">
@@ -91,17 +91,6 @@
       margin-bottom: 15px;
     }
 
-    .project-details ul {
-      color: rgba(255, 255, 255, 0.8);
-      line-height: 1.8;
-      margin-bottom: 15px;
-      padding-left: 20px;
-    }
-
-    .project-details li {
-      margin-bottom: 10px;
-    }
-
     .portfolio-info {
       background: rgba(255, 255, 255, 0.08);
       padding: 30px;
@@ -148,18 +137,25 @@
 
     .highlight-box {
       background: rgba(24, 210, 110, 0.1);
-      border-left: 3px solid #18d26e;
+      border: 1px solid rgba(24, 210, 110, 0.3);
       padding: 20px;
-      margin: 25px 0;
+      margin: 20px 0;
+      border-radius: 4px;
     }
 
     .highlight-box p {
       margin-bottom: 10px;
     }
 
-    .highlight-box ul {
-      margin-top: 10px;
-      margin-bottom: 10px;
+    .code-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid #18d26e;
+      padding: 15px;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      color: rgba(255, 255, 255, 0.9);
+      overflow-x: auto;
+      font-size: 13px;
     }
 
     @media (max-width: 992px) {
@@ -188,11 +184,11 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Mobile Phone Sales Analysis</h2>
+            <h2 class="portfolio-title">Healthcare Analytics Dashboard</h2>
 
             <!-- Project Image -->
             <img src="assets/img/portfolio/portfolio-6.png" 
-                 alt="Mobile Phone Sales Analysis Dashboard showing brand performance, geographic distribution, and revenue metrics" 
+                 alt="Healthcare analytics Tableau dashboard showing patient summaries, diagnostic trends, and treatment cost analysis" 
                  class="project-image">
 
             <!-- Project Details -->
@@ -200,62 +196,43 @@
               
               <h4>The Challenge</h4>
               <p>
-                Sales leadership needed a consolidated view of mobile phone performance across brands, products, customer segments, and geographies. Existing reports were siloed and static, making it difficult to:
-              </p>
-              <ul>
-                <li>Understand revenue drivers by brand, model, and customer demographics</li>
-                <li>Identify high-value customer segments and repeat purchase behavior</li>
-                <li>Track performance trends across time, locations, and sales channels</li>
-                <li>Support data-driven decisions on pricing, inventory allocation, and market expansion</li>
-              </ul>
+                Healthcare administrators and policymakers required a unified, easy-to-interpret view of patient care,
+                diagnostic trends, and treatment costs. Data was fragmented across multiple sources, limiting visibility
+                into patient outcomes, treatment effectiveness, seasonal admission patterns, and cost drivers; slowing
+                down evidence-based decision-making.
+              </p>              
 
               <h4>What I Built</h4>
               <p>
-                I designed and built a multi-page interactive Tableau dashboard covering Overview, Product Analysis, and Customer Insights.
+              I designed and delivered an interactive Tableau dashboard that integrates multiple healthcare datasets
+              into a single, analytics-ready view to support operational and strategic decision-making.
               </p>
 
-              <p><strong>1. Data Modeling & Preparation</strong></p>
-              <ul>
-                <li>Cleaned and structured sales data in Excel for analytics readiness</li>
-                <li>Created calculated fields for KPIs including revenue, average price, units sold, transactions, and CLV buckets</li>
-                <li>Built age bands, revenue segments, and purchase behavior classifications (new vs repeat)</li>
+              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                <li>Prepared and modeled healthcare data in Microsoft Excel for analytics readiness</li>
+                <li>Designed KPI-driven visualizations including trend lines, bar charts, pie charts, and heat maps</li>
+                <li>Built interactive filters enabling drill-down by time period, patient type, and diagnosis</li>
+                <li>Applied Tableau best practices for clarity, usability, and data storytelling</li>
               </ul>
 
-              <p><strong>2. Dashboard Design & Analytics</strong></p>
-              <ul>
-                <li>Developed KPI cards for Revenue ($14.53M), Units Sold (18,548), Transactions (303), and Average Price ($784.73)</li>
-                <li>Built trend analysis with daily, weekly, and monthly views</li>
-                <li>Analyzed revenue by gender, age group, brand, storage size, operating system, device color, and mobile model</li>
-                <li>Implemented customer segmentation by revenue contribution and units sold</li>
-                <li>Designed heat maps showing correlation between age groups and mobile models</li>
-                <li>Enabled interactive filters for time period, metric selection, product attributes, and geography</li>
-              </ul>
-
-              <p><strong>3. Customer & Product Insights</strong></p>
-              <ul>
-                <li>Evaluated new vs repeat purchase behavior across months</li>
-                <li>Analyzed CLV by age band to identify high-value customer segments</li>
-                <li>Built hierarchical product views (OS → Storage → Color → Brand → Model) for deep-dive analysis</li>
-              </ul>
+              </p>
 
               <div class="highlight-box">
-                <p><strong style="color: #18d26e;">Business Impact</strong></p>
-                <p>Delivered a single source of truth for sales, product, and customer performance across 2024. Enabled stakeholders to quickly identify:</p>
-                <ul>
-                  <li>Top-performing brands and models (iPhone and Samsung leading revenue contribution)</li>
-                  <li>High-value customer segments by age group and CLV</li>
-                  <li>Geographic revenue hotspots to prioritize market focus</li>
-                  <li>Repeat purchase trends, supporting retention and loyalty strategies</li>
-                </ul>
-                <p>Improved decision-making speed by replacing static reports with interactive, self-service analytics. Provided actionable insights to support pricing strategy, inventory optimization, and targeted marketing.</p>
+                <p><strong style="color: #18d26e;">Business Impact:</strong></p>
+                <p>• Enabled rapid identification of trends in patient admissions and outcomes</p>
+                <p>• Improved monitoring of treatment effectiveness and cost patterns across conditions</p>
+                <p>• Revealed seasonal admission trends using heat map analysis</p>
+                <p>• Reduced decision-making time through real-time access to critical healthcare KPIs</p>
               </div>
 
               <h4>Dashboard Structure</h4>
-              <p>The solution consists of a three-page Tableau dashboard:</p>
-              <ul>
-                <li><strong>Overview</strong> – KPIs, sales trends, revenue breakdown by brand and geography</li>
-                <li><strong>Product Analysis</strong> – brand performance, price analysis, storage and OS comparisons, color preferences</li>
-                <li><strong>Customer Insights</strong> – demographic analysis, purchase behavior, CLV segmentation, repeat vs new customer patterns</li>
+              <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+                <p>
+                The solution consists of a three-page Tableau dashboard:
+                </p>
+                <li><strong>Patient Summary</strong> – admissions trends, outcomes, and gender distribution;</li>
+                <li><strong>Diagnostic Conditions</strong> – prevalence and patterns across medical conditions;</li>
+                <li><strong>Treatment Cost Analysis</strong> – comparative cost and effectiveness across diagnoses.</li>
               </ul>
 
             </div>
@@ -266,26 +243,27 @@
             <ul>
               <li>
                 <strong>Overview</strong>
-                Interactive sales analytics dashboard providing comprehensive analysis of mobile device performance across brands, customer segments, and markets. Designed to support data-driven decisions for sales leadership and market strategists.
+                Interactive healthcare analytics dashboard providing real-time visibility into patient outcomes,
+                diagnostic trends, and treatment costs. Designed to support data-driven decisions for healthcare administrators and policymakers.
               </li>
 
               <li>
                 <strong>Technologies Used</strong>
-                Tableau Desktop (Interactive Dashboard), Microsoft Excel (Data Preparation), Calculated Fields, Data Modeling
+                 Tableau Desktop(Interactive Dashboard), Microsoft Excel, Data Modeling
               </li>
 
               <li>
                 <strong>Skills Demonstrated</strong>
-                Sales & customer analytics · Tableau dashboard design · KPI development · Data modeling · Customer segmentation · Trend analysis · Product performance analysis · Data storytelling · Analytics UX design
+                Healthcare analytics, data storytelling, KPI development and visualization, dashboard design, Tableau best practices, interactive reporting, and analytics UX design.
               </li>
 
               <li>
                 <strong>Business Impact</strong>
-                Enabled sales stakeholders to monitor brand performance, identify high-value customer segments, and optimize pricing and inventory strategies through centralized, interactive analytics.
+                Enabled healthcare stakeholders to monitor patient care performance, identify cost drivers, and improve resource allocation through centralized, real-time analytics.
               </li>
             </ul>
 
-            <a href="https://public.tableau.com/views/MobilePhoneSalesAnalysis/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+           <a href="https://public.tableau.com/views/HealthcareAnalyticsDashboard_17447229298490/PatientSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
                target="_blank" 
                class="project-link">
               <i class="bi bi-bar-chart-line"></i> View Live Dashboard
@@ -303,7 +281,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <link href="assets/vendor/isotope-layout/isotope.pkgd.min.js" rel="stylesheet">
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -314,3 +292,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
